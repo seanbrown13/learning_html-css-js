@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+      <title>Testing Collection</title>	
+    <link href="style.css" rel="stylesheet" type="text/css" />
+	<script src="scripts.js"></script>
+  </head>
+  
+  <body>
+
+<div id="Navbar">
+  <ul>
+    <li><a href='index.html'>Home</a></li>
+    <li> <a href="#">HTML/CSS Features</a>
+      <ul>
+        <li><a href="#CSS_Hover">CSS Hover</a></li>
+        <li><a href="#Form">HTML Forms</a></li>
+        <li><a href="#Tables">HTML Tables</a></li>
+      </ul>
+    </li>
+  </ul>
+  <ul>
+    <li><a href="#">JavaScript Features</a>
+      <ul>
+        <li><a href="#Expand">JS Expand</a></li>
+        <li><a href="#Visible_JavaScript">JS Visible</a></li>
+        <li><a href="#Invisible_JavaScript">JS Invisible</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<h1 class="text-primary">Testing Collection</h1>
+
+<p>A static HTML/CSS web page to which I will integrate interesting markup features as I happen across them. <br> 
+Please note, this is a work in progress, and the code most certainly requires annotations, a cleanup and refactor!</p>
+
+<h2 id="CSS_Hover">History</h2>
+
+<p>A voyage back in time...</p>
+<div class="History_Photos">
+<img src="https://tile.loc.gov/storage-services/service/pnp/ppmsca/15600/15645v.jpg" alt="Vue panoramique de l'exposition universelle de 1900" class="image" width="" height="100 ">
+  <div class="middle">
+    <div class="text">Paris Exhibition 1900</div>
+  </div>
+</div>
+
+<div class="History_Photos">
+  <img src="https://cdn.loc.gov/service/pnp/pga/00700/00795v.jpg" alt="Avatar" class="slideimage">
+  <div class="overlay">
+    <div class="slidetext">Brunel's Great Eastern</div>
+  </div>
+</div>
+
+  <h2>Modernity</h2>
+  <img src = "https://tile.loc.gov/storage-services/service/pnp/npcc/30900/30963v.jpg" width="" height="437 " alt="'Semmes Motor Line' outside Hudson and Dodge Brothers Motor Cars, July 1917"  longdesc="Dodge" class = "thick-blue-border"> 
+  <img src = "https://tile.loc.gov/storage-services/service/pnp/fsa/8b06000/8b06300/8b06318v.jpg" width="" height="437" alt="Production. BT-13A ('Valiant') basic trainers: fast, sturdy ship powered by a Pratt and Whitney Wasp engine"  longdesc=" Final assembly line at Vultee's Downey, California plant" class = "thicc-blue-border">
+  <br>
+  <h3 class=hombres style="color:pink" id="Expand">What's this about</h3>
+  <p>
+    <i>Some italic text</i>
+  </p>
+    <p class="red-text">Click 'Read more' to reveal a hidden link to a a nature video
+     <span id="dots">...</span><span id="more">
+    <br>
+    <br> 
+     <a href="https://www.youtube.com/watch?v=uQi-yDXBn9c>Axolotl">Axolotl</a>. 
+    </span>
+  </p>
+
+  <button onclick="myFunction()" id="myBtn">Read more</button>
+    
+    <h3 style="color: #2998E4" id="Tables">Classical Musician Tables</h3>
+    <p>
+    If there is code that would be <i>useful</i> for gauging the status of one's experiments it should be <b>shared</b>. 
+  </p>
+
+<table id="Baroque">
+    <tr>
+      <th>Baroque Musician</th>
+      <th>Instrument</th>
+    </tr>
+    <tr>
+      <td>Jonathan Rhys</td>
+      <td>Viola de Gamba</td>
+    </tr>
+    </table>
+    <br>
+
+<table id = "Classical Guitarists">
+  <tr>
+    <th>Forename</th>
+    <th>Surname</th>
+  </tr>
+  <tr>
+    <td>Julian</td>
+    <td>Bream</td>
+  </tr>
+  <tr>
+    <td>Milos</td>
+    <td>Karadaglic</td>
+  </tr>
+</table>
+      
+       <h3 id="Form"> Poll: Musicians past, present and future</h3>
+
+   <p>Your age range?</p>
+<ul>
+  <li><label><input type="radio" name="personality">13-18</label></li>
+  <li><label><input type="radio" name="personality">18-25</label></li>
+  <li><label><input type="radio" name="personality">25-40</label></li>
+  <li><label><input type="radio" name="personality">40+</label></li>
+</ul>
+<p>The greatest Jazz musician of all time?</p>
+<ol>
+  <li> <label><input type="radio" name="personality">Charlie Parker</label></li>
+  <li> <label><input type="radio" name="personality">Fats Domino</label></li>
+  <li> <label><input type="radio" name="personality">Miles Davis</label></li>
+  <li> <label><input type="radio" name="personality">Sammy Davis</label></li>
+</ol>
+  
+  <p>Submit your Photos here!</p>
+  <p>
+<form action="/submit-stephen-photo">
+  <input type="text" placeholder="Musician photo URL" required>
+  <input type="password"><br>
+  <button type="submit">This will not Submit</button>
+  
+  <label><input type="radio" name="indoor-outdoor"> Stationary</label>
+  <label><input type="radio" name="indoor-outdoor"> Action</label> 
+  
+</form>
+
+<p>The ideal personality of a friend should be (tick all that apply):</p>
+<p>
+  <form id="JRM" action="/do-nothing" method="post">
+<label><input type="checkbox" name="personality"> Loving</label>
+<label><input type="checkbox" name="personality"> Strong</label>
+<label><input type="checkbox" name="personality"> Smart</label>
+<label><input type="checkbox" name="personality"> Loyal</label></br>
+    <select>
+      <option>Happy</option>
+      <option>Passionate</option>
+      <option>Contemplative</option>
+    </select>
+    <button type="submit">This will not Submit</button></br></br>
+    
+    <div id="forename_input">
+      <label for="forename">Name</label>
+      <input name="forename" type="text"/>
+    </div>
+    
+    <div id="surname_input">
+      <label for="surnmame">Surname</label>
+      <input name="surname" type="text"/>
+    </div></br>
+</form>
+
+<!-- <div id="map" style="width:100%;height:400px;"></div>-->
+ 
+  <div id="rand_quote"> 
+    <h3 id="Visible_JavaScript">Random Quote Machine</h3>
+  <div class="row text-center">
+    <div class="col-xs-12 well message">
+      The Quote will go here
+    </div>
+  </div>
+  <br>
+  <div class="row text-center">
+    <div class="col-xs-12">
+      <button id="getMessage" class="btn btn-primary">
+        Get Quote
+      </button>
+    </div>
+     <br> Click the button above to deliver a quote to replace the placeholder text and mix up the colours of the site.
+  </div>
+  </div>
+  <br>
+
+  <!--SCRIPTS-->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function() {
+        $("#getMessage").on("click", function(){ 
+            $(".message").html(QuotePlusAuthor());
+            $("#getMessage").css("color", textColor);
+            $("body").css("color", textColor); 
+            }); 
+        });
+    </script>
+    
+    <h3 id=Invisible_JavaScript>Calculations behind the curtains</h3>
+    Tired of wrecking the layout of the page and want to see JavaScript invisibly execute in the browser console? Look no further than:
+    <a href=pages/factorialiser.html>Factorialiser</a>
+    
+    <p>Thankyou for reading!</p> 
+    <i>You can always visit my GitHub page <a href = "https://github.com/seanbrown13" target="_blank">here</a></i>
+  </body>
+</html>

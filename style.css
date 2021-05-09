@@ -1,0 +1,143 @@
+/*Settings for built in HTML classes*/
+h1 {
+  font-size: 50px;
+  font-family: Sans-serif
+}
+
+body {
+  padding: 10px
+}
+
+/*Navbar - selected with '#' rather than '.' notation*/
+#Navbar {background-color: rgb(41, 163, 194);}
+div a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+ul li {display: inline-block;}
+ul li:hover {background: #555;}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+ul li ul li { 
+  background: #555; 
+  display: block; 
+}
+ul li ul li a {display:block !important;} 
+ul li ul li:hover {background: #666;}
+
+/*History - Attributes for Image 1 and 2*/
+.History_Photos{
+    position: relative;
+    width: 50%;
+}
+
+.History_Photos:hover .overlay {
+  height:100%;
+}
+
+/*History - 1ST IMAGE*/
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*History: Hover effects*/
+.History_Photos:hover .image {
+  opacity: 0.6;
+  filter: blur(1px);
+}
+
+a:hover {
+    background-color: rgb(0, 162, 255);
+}
+
+/*History: First image - A nice blue box for the pop up text*/
+ .text {
+  background-color: rgb(101, 210, 243);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/*History: First image text box*/
+.History_Photos:hover .middle {
+  opacity: 1;
+}
+
+/*History - 2ND IMAGE*/
+/*History: Slide effects*/
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  opacity:0.9;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.slideimage {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.slidetext {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/*Modernity - A blue border for the first image*/
+.thick-blue-border {
+    border-style: solid;
+    border-width: 5px;
+    border-color: aquamarine;
+    border-radius: 10px
+  }
+
+/*Table*/ 
+table, th, td {/*background-color: beige;*/
+border: 1px solid black;}
+tr:nth-child(even) {background-color: #8ce6e9;}
+tr:nth-child(odd) {background-color: #b1eaee;}
